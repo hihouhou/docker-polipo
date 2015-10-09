@@ -13,6 +13,5 @@ RUN apt-get update && apt-get install -y polipo
 
 
 EXPOSE 8123
-ENTRYPOINT ["polipo"]
 
-CMD []
+CMD ["polipo", "proxyAddress=0.0.0.0", "proxyPort=8123"]
